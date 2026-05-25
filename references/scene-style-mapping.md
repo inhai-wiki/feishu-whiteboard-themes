@@ -9,12 +9,15 @@
 | **组织架构图** | 公司内部分享 | `vercel` > `ant-design` > `corporate` | 专业清晰、层级分明 |
 | **组织架构图** | 对外展示/汇报 | `corporate` > `apple` > `stripe` | 正式稳重、有品牌感 |
 | **组织架构图** | 团队轻松分享 | `whimsical` > `miro` > `excalidraw` | 轻松愉悦、协作氛围 |
+| **组织架构图** | 科技公司风格 | `google` > `microsoft` > `meta` | 品牌匹配、现代科技感 |
 | **技术架构图** | 技术文档/内部 | `github` > `vercel` > `dark-mode` | 开发者友好、代码感 |
 | **技术架构图** | 对外演示 | `stripe` > `linear` > `figma` | 科技感、精致 |
-| **技术架构图** | 3D/云架构 | `isometric` > `blueprint` > `dark-mode` | 立体感、工程感 |
+| **技术架构图** | 3D/云架构 | `isometric` > `blueprint` > `amazon` | 立体感、工程感、云计算 |
+| **技术架构图** | AI/大模型 | `claude-code` > `openai` > `dark-mode` | AI 原生感、科技前沿 |
 | **流程图** | 业务流程 | `lucidchart` > `ant-design` > `notion` | 标准规范、清晰可读 |
 | **流程图** | 产品流程 | `figma` > `whimsical` > `vercel` | 设计友好、现代感 |
 | **流程图** | 开发者工作流 | `github` > `vercel` > `linear` | 代码感、简洁 |
+| **流程图** | 品牌定制 | `netflix` > `spotify` > `tesla` | 品牌调性、视觉冲击 |
 | **思维导图** | 头脑风暴 | `excalidraw` > `miro` > `whimsical` | 自由随性、激发创意 |
 | **思维导图** | 会议记录 | `notion` > `whimsical` > `miro` | 干净、易归档 |
 | **思维导图** | 学习笔记 | `notion` > `pastel` > `minimal` | 轻松、易阅读 |
@@ -41,14 +44,20 @@
 | 教育/培训 | `pastel` / `whimsical` | 温和友好、降低紧张感 |
 | 工程/建筑 | `blueprint` / `isometric` | 技术感、专业感 |
 | 演讲/大会 | `apple` / `stripe` | 精致高端、品牌感 |
+| AI/科技前沿 | `claude-code` / `openai` | AI 原生感、科技前沿 |
+| 云计算/基础设施 | `amazon` / `microsoft` | 企业级、云服务感 |
+| 社交/内容平台 | `meta` / `bytedance` | 社交科技、活力 |
+| 沉浸式/多媒体 | `netflix` / `spotify` | 深色沉浸、品牌张力 |
 
 ## 用户画像匹配
 
 | 用户类型 | 默认推荐 | 原因 |
 |---|---|---|
-| 工程师/开发者 | `vercel` / `github` | 简洁、代码感、高效 |
-| 设计师 | `figma` / `apple` | 精致、设计工具熟悉感 |
-| 产品经理 | `linear` / `figma` | 现代 PM 工具感 |
-| 管理层/高管 | `corporate` / `apple` | 正式、专业、品牌感 |
-| 教师/学生 | `notion` / `pastel` | 简洁、温和、易读 |
-| 销售/市场 | `stripe` / `miro` | 科技感、活泼 |
+| 工程师/开发者 | `vercel` / `github` / `claude-code` | 简洁、代码感、高效 |
+| 设计师 | `figma` / `apple` / `stripe` | 精致、设计工具熟悉感 |
+| 产品经理 | `linear` / `figma` / `google` | 现代 PM 工具感 |
+| 管理层/高管 | `corporate` / `apple` / `microsoft` | 正式、专业、品牌感 |
+| 教师/学生 | `notion` / `pastel` / `whimsical` | 简洁、温和、易读 |
+| 销售/市场 | `stripe` / `miro` / `spotify` | 科技感、活泼 |
+| AI 从业者 | `claude-code` / `openai` / `dark-mode` | AI 原生、科技感 |
+| 运维/云计算 | `amazon` / `blueprint` / `github` | 企业级、工程感 |
