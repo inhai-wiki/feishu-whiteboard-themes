@@ -43,9 +43,9 @@ decoration:
 
 ---
 
-## 2. Apple 简约 `apple`
+## 2. Apple Bento UI `apple`
 
-> 灵感：apple.com — 大圆角、精致留白、SF Pro 风格
+> 灵感：Apple Bento Grid — 大圆角卡片网格、不等高、精致留白、SF Pro 风格、类 iOS/macOS 设置页 Bento 布局
 
 ```yaml
 palette:
