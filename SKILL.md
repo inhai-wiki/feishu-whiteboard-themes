@@ -99,7 +99,42 @@ description: "飞书画板主题库：为 SVG/DSL 画板提供 32 种视觉风�
 - **连线风格**（`connector`）：颜色、宽度、虚线/实线
 - **装饰规则**（`decoration`）：是否允许渐变、图标风格、额外点缀
 
-### Step 3：应用到 SVG/DSL
+### Step 3：注入图标
+
+在写 SVG 节点时，根据节点文本语义自动匹配并注入图标。详细映射和渲染策略见 `references/icon-mapping.md`。
+
+**注入流程**：
+
+1. **检查 `decoration.icons` 值** — 如果是 `none`，跳过图标注入
+2. **语义匹配** — 从节点的标题/标签中提取关键词，在 `icon-mapping.md` 的语义表中查找匹配的 FontAwesome 图标
+   - 优先匹配更具体的关键词（如"Redis"优先于"数据库"）
+   - 无匹配时不强制注入，保持纯文字节点
+3. **确定渲染参数** — 根据 `decoration.icons` 的策略值，确定图标尺寸、颜色、模板
+4. **注入 SVG 元素** — 在节点中插入图标 `<text>` 元素，文字右移为图标腾出空间
+
+**必须注入图标的场景**：
+- 技术架构图：每个组件节点都应尝试匹配
+- 流程图：关键处理节点（审批、发送、存储等）
+- 组织架构图：人员节点应有用户图标
+
+**可以省略图标的场景**：
+- 思维导图叶子节点（语义泛化的"其他"、"备注"等）
+- 饼图/柱状图等数据图表
+- 甘特图普通时间条（里程碑除外）
+
+**FontAwesome CDN 引入**（在 SVG `<style>` 中）：
+```xml
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+```
+
+**基础图标模板**：
+```xml
+<text font-family="'Font Awesome 6 Free'" font-weight="900" font-size="ICON_SIZE" fill="ICON_COLOR"
+      x="PADDING" y="BASELINE">&#xf0e0;</text>
+<!-- 文字右移：x = ICON_X + ICON_SIZE + 6 -->
+```
+
+### Step 4：应用到 SVG/DSL
 
 在写 SVG 代码时，严格使用 Step 2 提取的参数替换以下默认值：
 
@@ -113,6 +148,7 @@ description: "飞书画板主题库：为 SVG/DSL 画板提供 32 种视觉风�
 边框宽度 → shape.borderWidth
 标题字重 → typography.titleWeight
 正文字号 → typography.bodySize
+图标注入 → Step 3 的语义匹配结果
 ```
 
 **重要约束**（来自飞书画板限制）：
@@ -121,19 +157,7 @@ description: "飞书画板主题库：为 SVG/DSL 画板提供 32 种视觉风�
 - 阴影效果用叠加半透明矩形模拟，不用 `<filter>`
 - 文字必须用 `<text>`，不用 `<path>`
 
-**图标使用**：
-- 如需在节点中添加图标，使用 [FontAwesome](https://fontawesome.com/) 图标库
-- 在 SVG 的 `<style>` 中通过 CDN 引入：
-  ```xml
-  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
-  ```
-- 图标用 `<text>` 元素渲染 FontAwesome 字体图标：
-  ```xml
-  <text font-family="'Font Awesome 6 Free'" font-weight="900" font-size="14" fill="#666">&#xf0e0;</text>
-  ```
-- 常用图标 Unicode：用户 `` (`&#xf007;`)、齿轮 `` (`&#xf013;`)、邮件 `` (`&#xf0e0;`)、数据库 `` (`&#xf1c0;`)、云端 `` (`&#xf0c2;`)、图表 `` (`&#xf080;`)
-
-### Step 4：混合与定制
+### Step 5：混合与定制
 
 用户可以在基础风格上叠加定制：
 
@@ -192,3 +216,4 @@ description: "飞书画板主题库：为 SVG/DSL 画板提供 32 种视觉风�
 
 - [`references/style-catalog.md`](references/style-catalog.md) — 完整风格参数库（配色、形状、字体、连线）
 - [`references/scene-style-mapping.md`](references/scene-style-mapping.md) — 图表类型 × 场景 × 推荐风格映射
+- [`references/icon-mapping.md`](references/icon-mapping.md) — 语义关键词 → FontAwesome 图标映射 + 32 种图标渲染策略 + SVG 注入模板
