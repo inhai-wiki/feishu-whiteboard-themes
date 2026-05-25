@@ -3,6 +3,10 @@
 **飞书画板主题库** — 为 Claude Code + [lark-cli](https://github.com/larksuite/cli) 画板创作提供 32 种可复用视觉风格模板。
 
 <p align="center">
+  <img src="examples/cover.png" alt="32 种风格预览" width="100%">
+</p>
+
+<p align="center">
   <a href="https://github.com/larksuite/cli">
     <img src="https://img.shields.io/badge/lark--cli-companion-blue?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyTDIgN2wxMCA1IDEwLTV6Ii8+PC9zdmc+" alt="lark-cli" />
   </a>
@@ -82,45 +86,45 @@ git clone https://github.com/inhai-wiki/feishu-whiteboard-themes.git ~/.claude/s
 | 23 | `claude-code` | ![Claude Code](examples/claude-code.png) | 暖橙棕终端感、AI 原生 |
 | 24 | `google` | ![Google](examples/google.png) | 四色品牌、Material You |
 | 25 | `microsoft` | ![Microsoft](examples/microsoft.png) | Fluent Design、四色方格 |
-| 26 | `meta` | | 渐变蓝、现代社交科技 |
-| 27 | `amazon` | | 深蓝橙、云计算企业级 |
+| 26 | `meta` | ![Meta](examples/meta.png) | 渐变蓝、现代社交科技 |
+| 27 | `amazon` | ![Amazon](examples/amazon.png) | 深蓝橙、云计算企业级 |
 | 28 | `netflix` | ![Netflix](examples/netflix.png) | 深黑红、电影沉浸感 |
 | 29 | `spotify` | ![Spotify](examples/spotify.png) | 深绿黑、活力绿 |
-| 30 | `tesla` | | 极简黑白红、工程美学 |
-| 31 | `openai` | | 柔和绿、AI 前沿 |
-| 32 | `bytedance` | | 黑白粉青、短视频活力 |
+| 30 | `tesla` | ![Tesla](examples/tesla.png) | 极简黑白红、工程美学 |
+| 31 | `openai` | ![OpenAI](examples/openai.png) | 柔和绿、AI 前沿 |
+| 32 | `bytedance` | ![ByteDance](examples/bytedance.png) | 黑白粉青、短视频活力 |
 
 ### 设计工具 & 协作平台
 
 | # | 风格 ID | 预览 | 关键词 |
 |---|---|---|---|
 | 1 | `vercel` | ![Vercel](examples/vercel.png) | 黑白灰、零圆角、工程师美学 |
-| 2 | `apple` | ![Apple](examples/apple.png) | 大圆角、精致留白 |
-| 3 | `notion` | | 超轻边框、文档内嵌感 |
-| 4 | `figma` | | 彩色标签、网格系统 |
+| 2 | `apple` | ![Apple](examples/apple.png) | Bento UI、大圆角、精致留白 |
+| 3 | `notion` | ![Notion](examples/notion.png) | 超轻边框、文档内嵌感 |
+| 4 | `figma` | ![Figma](examples/figma.png) | 彩色标签、网格系统 |
 | 5 | `excalidraw` | ![Excalidraw](examples/excalidraw.png) | 手绘线条、便签黄、白板协作 |
-| 6 | `miro` | | 彩色便利贴、团队协作 |
-| 7 | `material` | | Google 设计语言、阴影层级 |
-| 8 | `ant-design` | | 阿里设计体系、专业蓝 |
-| 9 | `github` | | 深色代码感、等宽风 |
-| 10 | `stripe` | | 精致渐变、科技紫 |
-| 11 | `linear` | | 深色、紫色调、项目管理 |
-| 12 | `whimsical` | | 柔和圆角、淡彩 |
-| 13 | `lucidchart` | | 标准流程图、企业蓝灰 |
+| 6 | `miro` | ![Miro](examples/miro.png) | 彩色便利贴、团队协作 |
+| 7 | `material` | ![Material](examples/material.png) | Google 设计语言、阴影层级 |
+| 8 | `ant-design` | ![Ant Design](examples/ant-design.png) | 阿里设计体系、专业蓝 |
+| 9 | `github` | ![GitHub](examples/github.png) | 深色代码感、等宽风 |
+| 10 | `stripe` | ![Stripe](examples/stripe.png) | 精致渐变、科技紫 |
+| 11 | `linear` | ![Linear](examples/linear.png) | 深色、紫色调、项目管理 |
+| 12 | `whimsical` | ![Whimsical](examples/whimsical.png) | 柔和圆角、淡彩 |
+| 13 | `lucidchart` | ![Lucidchart](examples/lucidchart.png) | 标准流程图、企业蓝灰 |
 
 ### 通用设计风格
 
 | # | 风格 ID | 预览 | 关键词 |
 |---|---|---|---|
-| 14 | `dark-mode` | | 深色背景、高对比、护眼 |
+| 14 | `dark-mode` | ![Dark Mode](examples/dark-mode.png) | 深色背景、高对比、护眼 |
 | 15 | `neon` | ![Neon](examples/neon.png) | 霓虹发光、未来感 |
-| 16 | `blueprint` | | 深蓝底色、工程图纸 |
-| 17 | `pastel` | | 柔和淡彩、温馨 |
+| 16 | `blueprint` | ![Blueprint](examples/blueprint.png) | 深蓝底色、工程图纸 |
+| 17 | `pastel` | ![Pastel](examples/pastel.png) | 柔和淡彩、温馨 |
 | 18 | `corporate` | ![Corporate](examples/corporate.png) | 深蓝金配色、稳重 |
-| 19 | `minimal` | | 最少元素、最大留白 |
-| 20 | `monochrome` | | 纯黑白、无彩色 |
-| 21 | `isometric` | | 等距投影、立体感 |
-| 22 | `duotone` | | 两色高对比、海报感 |
+| 19 | `minimal` | ![Minimal](examples/minimal.png) | 最少元素、最大留白 |
+| 20 | `monochrome` | ![Monochrome](examples/monochrome.png) | 纯黑白、无彩色 |
+| 21 | `isometric` | ![Isometric](examples/isometric.png) | 等距投影、立体感 |
+| 22 | `duotone` | ![Duotone](examples/duotone.png) | 两色高对比、海报感 |
 
 ## 文件结构
 
