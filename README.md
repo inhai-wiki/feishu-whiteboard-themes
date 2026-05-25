@@ -167,6 +167,21 @@ feishu-whiteboard-themes/
 - **connector** — 连线风格（颜色、宽度、虚线/实线）
 - **decoration** — 装饰规则（渐变、图标风格、额外点缀）
 
+## 图标支持
+
+图表中如需使用图标，推荐使用 [FontAwesome](https://fontawesome.com/) 图标库，通过 CDN 引入：
+
+```xml
+<!-- 在 SVG <style> 中引入 -->
+<style>
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+  text { font-family: "SF Pro Display", "Noto Sans SC", sans-serif; }
+</style>
+
+<!-- 使用 FontAwesome 图标 -->
+<text font-family="'Font Awesome 6 Free'" font-weight="900" font-size="14" fill="#666">&#xf007;</text>
+```
+
 ## License
 
 MIT
