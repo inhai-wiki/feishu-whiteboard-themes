@@ -101,6 +101,18 @@ description: "飞书画板主题库：为 SVG/DSL 画板提供 32 种视觉风�
 - 阴影效果用叠加半透明矩形模拟，不用 `<filter>`
 - 文字必须用 `<text>`，不用 `<path>`
 
+**图标使用**：
+- 如需在节点中添加图标，使用 [FontAwesome](https://fontawesome.com/) 图标库
+- 在 SVG 的 `<style>` 中通过 CDN 引入：
+  ```xml
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+  ```
+- 图标用 `<text>` 元素渲染 FontAwesome 字体图标：
+  ```xml
+  <text font-family="'Font Awesome 6 Free'" font-weight="900" font-size="14" fill="#666">&#xf0e0;</text>
+  ```
+- 常用图标 Unicode：用户 `` (`&#xf007;`)、齿轮 `` (`&#xf013;`)、邮件 `` (`&#xf0e0;`)、数据库 `` (`&#xf1c0;`)、云端 `` (`&#xf0c2;`)、图表 `` (`&#xf080;`)
+
 ### Step 4：混合与定制
 
 用户可以在基础风格上叠加定制：
