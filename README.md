@@ -54,17 +54,31 @@ Claude Code (AI Agent)
 
 ## 安装
 
-在 Claude Code 中直接对 AI 说：
+### 前置条件
 
-```
+本主题库是 [lark-cli](https://github.com/larksuite/cli) 的配套 Skill，**需要先安装 lark-cli 才能使用**。
+
+```bash
+# 第一步：安装 lark-cli（必须）
+# 在 Claude Code 中直接说：
+帮我安装这个工具: https://github.com/larksuite/cli
+
+# 第二步：安装本主题库（必须）
+# 在 Claude Code 中直接说：
 帮我安装这个 skill: https://github.com/inhai-wiki/feishu-whiteboard-themes
 ```
 
-或者手动安装：
+手动安装：
 
 ```bash
+# 1. 先安装 lark-cli
+#    参考 https://github.com/larksuite/cli
+
+# 2. 再安装本主题库
 git clone https://github.com/inhai-wiki/feishu-whiteboard-themes.git ~/.claude/skills/feishu-whiteboard-themes
 ```
+
+> 如果只安装了本主题库而没有安装 lark-cli，在对话中画图时 AI 会自动引导你完成 lark-cli 的安装。
 
 ## 使用方式
 
