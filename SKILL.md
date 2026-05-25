@@ -8,6 +8,26 @@ description: "飞书画板主题库：为 SVG/DSL 画板提供 32 种视觉风�
 
 为飞书画板 SVG/DSL 创作提供可复用的视觉风格系统。覆盖 32 种风格，从极简到华丽，从商务到技术，一键切换。
 
+## 前置依赖
+
+本 skill 是 [lark-cli](https://github.com/larksuite/cli) 的配套主题库，**必须配合 lark-cli 使用**。触发本 skill 时，先检查依赖是否就绪：
+
+1. **检查 `lark-cli` 是否可用**：运行 `lark-cli --version`
+   - 如果命令存在 → 继续
+   - 如果命令不存在 → 提示用户安装：
+     > 本主题库需要配合 [lark-cli](https://github.com/larksuite/cli) 使用。请先安装：
+     > ```bash
+     > # 在 Claude Code 中直接说：
+     > 帮我安装这个工具: https://github.com/larksuite/cli
+     > ```
+     > 安装完成后，我就可以帮你用各种风格画图了。
+
+2. **检查 `whiteboard-cli` 是否可用**：运行 `npx -y @larksuite/whiteboard-cli@^0.2.11 -v`
+   - 如果可用 → 继续
+   - 如果不可用 → 同样提示用户先完成 lark-cli 安装
+
+**不要在依赖缺失时继续执行后续工作流**，必须等用户完成安装。
+
 ## 触发时机
 
 当以下任一条件满足时，主动读取本 skill 并应用：
