@@ -154,7 +154,7 @@ description: "飞书画板主题库：为 SVG/DSL 画板提供 32 种视觉风�
 | # | 风格 ID | 名称 | 一句话描述 |
 |---|---|---|---|
 | 1 | `vercel` | Vercel 极简 | 黑白灰、零圆角、大写标签、工程师美学 |
-| 2 | `apple` | Apple 简约 | 大圆角、毛玻璃感、SF 风格、精致留白 |
+| 2 | `apple` | Apple Bento UI | 大圆角、不等高卡片网格、精致留白、iOS widget 感 |
 | 3 | `notion` | Notion 文档 | 超轻边框、小圆角、文档内嵌感、克制裁剪 |
 | 4 | `figma` | Figma 设计 | 圆角卡片、彩色标签、网格系统、设计工具感 |
 | 5 | `excalidraw` | Excalidraw 手绘 | 手绘线条、随意感、暖色调、白板协作感 |
