@@ -132,17 +132,11 @@ git clone https://github.com/inhai-wiki/feishu-whiteboard-themes.git ~/.claude/s
 feishu-whiteboard-themes/
 ├── SKILL.md                          # 主入口：触发规则、工作流、风格路由
 ├── README.md                         # 本文件
-├── examples/                         # 风格示例截图
-│   ├── claude-code.png
-│   ├── google.png
-│   ├── microsoft.png
-│   ├── netflix.png
-│   ├── spotify.png
-│   ├── vercel.png
-│   ├── excalidraw.png
-│   ├── neon.png
-│   ├── apple.png
-│   └── corporate.png
+├── examples/                         # 风格示例截图（32 种 + 封面合集）
+│   ├── cover.png                     # 顶部封面合集
+│   ├── claude-code.png ... bytedance.png
+│   ├── vercel.png ... lucidchart.png
+│   └── dark-mode.png ... duotone.png
 └── references/
     ├── style-catalog.md              # 完整风格参数库（配色、形状、字体、连线）
     └── scene-style-mapping.md        # 图表类型 × 场景 × 推荐风格映射
